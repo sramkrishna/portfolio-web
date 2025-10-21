@@ -1,0 +1,30 @@
+<article class="talk-card">
+  <div class="talk-header">
+    <h3>{{ .Title }}</h3>
+    {{ with .Params.event }}
+    <div class="talk-event">{{ . }}</div>
+    {{ end }}
+  </div>
+
+  {{ with .Params.date }}
+  <div class="talk-date">{{ dateFormat "January 2, 2006" . }}</div>
+  {{ end }}
+
+  {{ with .Params.description }}
+  <p>{{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.location }}
+  <div class="talk-location">📍 {{ . }}</div>
+  {{ end }}
+
+  {{ with .Params.links }}
+  <div class="talk-links">
+    {{ range . }}
+    <a href="{{ .url }}" class="btn btn-link" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
+      {{ .name }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>

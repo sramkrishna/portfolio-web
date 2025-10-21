@@ -1,0 +1,71 @@
+{{/* Section Icons using GNOME palette */}}
+
+{{/* Project & Community Management Icon - Checklist/Tasks */}}
+{{ define "partials/icon-gnome" }}
+<svg class="section-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="28" fill="#3584e4"/>
+  <!-- Clipboard background -->
+  <rect x="16" y="12" width="28" height="36" rx="3" fill="#f9f06b"/>
+  <rect x="20" y="16" width="20" height="28" fill="#3584e4"/>
+  <!-- Checkmarks / task list -->
+  <path d="M24 22 L26 24 L30 20" stroke="#f9f06b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="32" y1="22" x2="38" y2="22" stroke="#f9f06b" stroke-width="2" stroke-linecap="round"/>
+
+  <path d="M24 30 L26 32 L30 28" stroke="#f9f06b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="32" y1="30" x2="38" y2="30" stroke="#f9f06b" stroke-width="2" stroke-linecap="round"/>
+
+  <path d="M24 38 L26 40 L30 36" stroke="#f6d32d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="32" y1="38" x2="38" y2="38" stroke="#f6d32d" stroke-width="2" stroke-linecap="round"/>
+</svg>
+{{ end }}
+
+{{/* AI Icon - Brain/chip hybrid */}}
+{{ define "partials/icon-ai" }}
+<svg class="section-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="28" fill="#9141AC"/>
+  <!-- Circuit board / brain pattern -->
+  <circle cx="20" cy="20" r="4" fill="#f6d32d"/>
+  <circle cx="40" cy="20" r="4" fill="#f6d32d"/>
+  <circle cx="20" cy="40" r="4" fill="#f6d32d"/>
+  <circle cx="40" cy="40" r="4" fill="#f6d32d"/>
+  <circle cx="30" cy="30" r="5" fill="#f9f06b"/>
+  <!-- Connections -->
+  <line x1="20" y1="20" x2="30" y2="30" stroke="#f6d32d" stroke-width="3"/>
+  <line x1="40" y1="20" x2="30" y2="30" stroke="#f6d32d" stroke-width="3"/>
+  <line x1="20" y1="40" x2="30" y2="30" stroke="#f6d32d" stroke-width="3"/>
+  <line x1="40" y1="40" x2="30" y2="30" stroke="#f6d32d" stroke-width="3"/>
+  <!-- Circuit traces -->
+  <rect x="18" y="18" width="4" height="4" fill="#f9f06b" opacity="0.5"/>
+  <rect x="38" y="18" width="4" height="4" fill="#f9f06b" opacity="0.5"/>
+  <rect x="18" y="38" width="4" height="4" fill="#f9f06b" opacity="0.5"/>
+  <rect x="38" y="38" width="4" height="4" fill="#f9f06b" opacity="0.5"/>
+</svg>
+{{ end }}
+
+{{/* Events Icon - People gathering */}}
+{{ define "partials/icon-events" }}
+<svg class="section-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="28" fill="#FF7800"/>
+  <!-- Three people silhouettes -->
+  <circle cx="22" cy="22" r="5" fill="#f6d32d"/>
+  <circle cx="38" cy="22" r="5" fill="#f6d32d"/>
+  <circle cx="30" cy="28" r="5" fill="#f9f06b"/>
+  <!-- Bodies -->
+  <ellipse cx="22" cy="36" rx="7" ry="9" fill="#f6d32d"/>
+  <ellipse cx="38" cy="36" rx="7" ry="9" fill="#f6d32d"/>
+  <ellipse cx="30" cy="42" rx="7" ry="9" fill="#f9f06b"/>
+</svg>
+{{ end }}
+
+{{/* Talks Icon - Megaphone/Speaker */}}
+{{ define "partials/icon-talks" }}
+<svg class="section-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="28" fill="#33D17A"/>
+  <!-- Megaphone -->
+  <path d="M15 25 L30 20 L30 40 L15 35 Z" fill="#f6d32d"/>
+  <rect x="12" y="25" width="5" height="10" rx="1" fill="#f9f06b"/>
+  <!-- Sound waves -->
+  <path d="M34 22 Q38 26 38 30 Q38 34 34 38" stroke="#f9f06b" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M40 18 Q46 24 46 30 Q46 36 40 42" stroke="#f9f06b" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
+{{ end }}

@@ -1,0 +1,41 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Portfolio'
+theme = 'portfolio'
+
+[params]
+  description = 'Sriram (Sri) Ramkrishna is a multi-discplinary technologst who run the gambit between community architect, technical acument, and strong people and soft skills'
+  author = 'Sriram Ramkrishna'
+  headshot = '/images/sri-headshot.jpg'
+
+[taxonomies]
+  type = 'types'
+  talkstatus = 'talkstatuses'
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 10
+
+[[menus.main]]
+  name = 'LinkedIn'
+  identifier = 'linkedin'
+  url = 'https://linkedin.com/in/sriram-ramkrishna'
+  weight = 30
+
+[[menus.main]]
+  name = 'GitHub'
+  identifier = 'github'
+  url = 'https://github.com/sramkrishna/'
+  weight = 40
+
+[[menus.main]]
+  name = 'GitLab'
+  identifier = 'gitlab'
+  url = 'https://gitlab.gnome.org/sri'
+  weight = 50
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

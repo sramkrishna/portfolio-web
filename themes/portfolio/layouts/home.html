@@ -1,0 +1,105 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>{{ site.Params.author }}</h1>
+    <p class="subtitle">{{ site.Params.description }}</p>
+  </div>
+</section>
+
+<!-- Projects by Type -->
+{{ $projectTypes := slice "gnome" "ai" "events" }}
+{{ $typeNames := dict "gnome" "Project Mgmt & Community Architect" "ai" "AI/ML" "events" "Events" }}
+{{ $typeDescriptions := dict "gnome" "Community building, project management, and leadership" "ai" "Machine learning, AI development, and intelligent systems" "events" "Conferences and community events I've organized and led" }}
+
+{{ range $projectTypes }}
+  {{ $currentType := . }}
+  {{ $projects := where (where site.RegularPages "Section" "projects") ".Params.types" "intersect" (slice $currentType) }}
+  {{ if $projects }}
+  <section class="project-type-section project-type-{{ $currentType }}" data-type="{{ $currentType }}">
+    <div class="container">
+      <h2 class="section-title">
+        {{ if eq $currentType "gnome" }}
+          {{ partial "icon-gnome" . }}
+        {{ else if eq $currentType "ai" }}
+          {{ partial "icon-ai" . }}
+        {{ else if eq $currentType "events" }}
+          {{ partial "icon-events" . }}
+        {{ end }}
+        {{ index $typeNames $currentType }}
+      </h2>
+      <p class="section-description">{{ index $typeDescriptions $currentType }}</p>
+      <div class="projects-grid">
+        {{ range $projects }}
+          {{ partial "project-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+<!-- Talks Carousel -->
+{{ $allTalks := where site.RegularPages "Section" "talks" }}
+{{ if $allTalks }}
+<section class="talks-section">
+  <div class="container">
+    <h2 class="section-title">
+      {{ partial "icon-talks" . }}
+      Talks
+    </h2>
+    <p class="section-description">Presentations and speaking engagements</p>
+    <div class="talks-carousel">
+      <button class="carousel-btn carousel-prev" aria-label="Previous talk">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+      <div class="talks-carousel-wrapper">
+        <div class="talks-carousel-track">
+          {{ range $allTalks }}
+            {{ partial "talk-card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+      <button class="carousel-btn carousel-next" aria-label="Next talk">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="carousel-indicators"></div>
+  </div>
+</section>
+{{ end }}
+
+<!-- About Section -->
+{{ with .Content }}
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about">
+      {{ with site.Params.headshot }}
+      <img src="{{ . }}" alt="{{ site.Params.author }}" class="headshot-large">
+      {{ end }}
+      <div class="about-content">
+        {{ . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-description">Get in touch with me</p>
+    <div class="contact-content">
+      <p>Feel free to reach out via email:</p>
+      <p class="contact-email">
+        <a href="mailto:queries@ramkrishna.me">queries@ramkrishna.me</a>
+      </p>
+    </div>
+  </div>
+</section>
+{{ end }}
