@@ -174,8 +174,10 @@ header .container {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center -4px;
   border: 2px solid var(--color-blue);
   flex-shrink: 0;
+  transform: scale(0.80);
 }
 
 nav ul {
