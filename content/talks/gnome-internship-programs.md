@@ -7,9 +7,9 @@ location = "Denver, CO"
 talkstatuses = ["previous"]
 
 [[links]]
-name = "Recording"
+name = "Watch Video"
 url = "https://youtube.com/watch?v=example-gnome"
-external = true
+type = "video"
 +++
 
 ## Overview

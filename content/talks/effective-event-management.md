@@ -7,14 +7,14 @@ location = "Virtual"
 talkstatuses = ["previous"]
 
 [[links]]
-name = "Recording"
+name = "Watch Video"
 url = "https://youtube.com/watch?v=example"
-external = true
+type = "video"
 
 [[links]]
 name = "Slides"
 url = "https://slides.com/example"
-external = true
+type = "slides"
 +++
 
 ## Talk Summary

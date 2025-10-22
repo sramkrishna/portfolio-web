@@ -21,9 +21,22 @@
   {{ with .Params.links }}
   <div class="talk-links">
     {{ range . }}
-    <a href="{{ .url }}" class="btn btn-link" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
+    {{ if eq .type "video" }}
+    <a href="{{ .url }}" class="btn btn-video" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 6px;">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
       {{ .name }}
     </a>
+    {{ else if eq .type "slides" }}
+    <a href="{{ .url }}" class="btn btn-link" target="_blank" rel="noopener">
+      {{ .name }}
+    </a>
+    {{ else }}
+    <a href="{{ .url }}" class="btn btn-link" target="_blank" rel="noopener">
+      {{ .name }}
+    </a>
+    {{ end }}
     {{ end }}
   </div>
   {{ end }}

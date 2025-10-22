@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="project-single">
+  <header class="project-header">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Params.description }}
+    <p class="project-lead">{{ . }}</p>
+    {{ end }}
+
+    <div class="project-meta">
+      {{ with .Params.tags }}
+      <div class="project-tags">
+        {{ range . }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ with .Date }}
+      <div class="project-date">
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2006" }}</time>
+      </div>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="project-body">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.links }}
+  <footer class="project-footer">
+    <div class="project-links">
+      {{ range . }}
+      <a href="{{ .url }}" class="btn btn-primary" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
+        {{ .name }}
+      </a>
+      {{ end }}
+    </div>
+  </footer>
+  {{ end }}
+
+  <div class="project-navigation">
+    <a href="/#{{ index .Params.types 0 }}" class="btn btn-link">← Back to Projects</a>
+  </div>
+</article>
+{{ end }}

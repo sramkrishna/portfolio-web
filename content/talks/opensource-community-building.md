@@ -9,7 +9,7 @@ talkstatuses = ["upcoming"]
 [[links]]
 name = "Event Details"
 url = "https://fosdem.org"
-external = true
+type = "conference"
 +++
 
 ## Talk Overview

@@ -1,3 +1,7 @@
+{{ $isEvent := in .Params.types "events" }}
+
+{{ if $isEvent }}
+<!-- Event card - not clickable, only button links -->
 <article class="project-card">
   <div class="project-content">
     <h3>{{ .Title }}</h3>
@@ -27,3 +31,32 @@
     {{ end }}
   </div>
 </article>
+
+{{ else }}
+<!-- Non-event card - clickable to project page -->
+<a href="{{ .RelPermalink }}" class="project-card-link">
+  <article class="project-card project-card-clickable">
+    <div class="project-content">
+      <h3>{{ .Title }}</h3>
+
+      {{ with .Params.description }}
+      <p>{{ . }}</p>
+      {{ end }}
+    </div>
+
+    <div class="project-footer">
+      {{ with .Params.tags }}
+      <div class="project-tags">
+        {{ range . }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <div class="project-links">
+        <span class="btn btn-link">View Project →</span>
+      </div>
+    </div>
+  </article>
+</a>
+{{ end }}

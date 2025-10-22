@@ -7,9 +7,9 @@ location = "San Francisco, CA"
 talkstatuses = ["upcoming"]
 
 [[links]]
-name = "Register"
+name = "Event Details"
 url = "https://example.com/devconf"
-external = true
+type = "conference"
 +++
 
 ## Abstract
