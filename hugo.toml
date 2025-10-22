@@ -1,4 +1,4 @@
-baseURL = 'https://sramkrishna.github.io/'
+baseURL = 'https://portfolio.ramkrishna.me/'
 languageCode = 'en-us'
 title = 'Portfolio'
 theme = 'portfolio'
