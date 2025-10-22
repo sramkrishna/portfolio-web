@@ -320,7 +320,8 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-lg);
   margin-top: var(--spacing-lg);
-  align-items: start;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 /* Project Card */
@@ -346,7 +347,7 @@ section {
 }
 
 .project-card h3 {
-  color: var(--color-blue-light);
+  color: var(--color-yellow);
   margin-bottom: var(--spacing-sm);
   position: relative;
   padding-bottom: var(--spacing-xs);
@@ -371,6 +372,11 @@ section {
 .project-card p {
   color: var(--text-secondary);
   margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Clickable Project Cards */
