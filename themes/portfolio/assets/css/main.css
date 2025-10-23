@@ -441,6 +441,20 @@ section {
   border: 2px solid transparent;
 }
 
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid var(--border-yellow-faded);
+  color: var(--color-yellow);
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--bg-tertiary);
+  border-color: var(--color-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(249, 240, 107, 0.2);
+}
+
 .btn-link {
   background-color: transparent;
   border-color: var(--color-blue);
