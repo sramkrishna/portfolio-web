@@ -927,6 +927,10 @@ section {
 
 .project-single .project-footer {
   margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-yellow-faded);
+  border-radius: var(--border-radius);
 }
 
 .project-single .project-links {
