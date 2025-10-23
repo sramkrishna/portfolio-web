@@ -8,9 +8,9 @@
 </section>
 
 <!-- Projects by Type -->
-{{ $projectTypes := slice "gnome" "ai" "events" }}
-{{ $typeNames := dict "gnome" "Project Mgmt & Community Architect" "ai" "AI/ML" "events" "Events" }}
-{{ $typeDescriptions := dict "gnome" "Community building, project management, and leadership" "ai" "Machine learning, AI development, and intelligent systems" "events" "Conferences and community events I've organized and led" }}
+{{ $projectTypes := slice "gnome" "tech" "events" }}
+{{ $typeNames := dict "gnome" "Project Mgmt & Community Architect" "tech" "Tech Projects" "events" "Events" }}
+{{ $typeDescriptions := dict "gnome" "Community building, project management, and leadership" "tech" "Technical projects and software development" "events" "Conferences and community events I've organized and led" }}
 
 {{ range $projectTypes }}
   {{ $currentType := . }}
@@ -21,7 +21,7 @@
       <h2 class="section-title">
         {{ if eq $currentType "gnome" }}
           {{ partial "icon-gnome" . }}
-        {{ else if eq $currentType "ai" }}
+        {{ else if eq $currentType "tech" }}
           {{ partial "icon-ai" . }}
         {{ else if eq $currentType "events" }}
           {{ partial "icon-events" . }}
@@ -29,11 +29,36 @@
         {{ index $typeNames $currentType }}
       </h2>
       <p class="section-description">{{ index $typeDescriptions $currentType }}</p>
+      {{ if gt (len $projects) 3 }}
+      <!-- Carousel for more than 3 projects -->
+      <div class="projects-carousel" data-type="{{ $currentType }}">
+        <button class="carousel-btn carousel-prev" aria-label="Previous project">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+          </svg>
+        </button>
+        <div class="projects-carousel-wrapper">
+          <div class="projects-carousel-track">
+            {{ range $projects }}
+              {{ partial "project-card.html" . }}
+            {{ end }}
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Next project">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="carousel-indicators"></div>
+      {{ else }}
+      <!-- Grid for 3 or fewer projects -->
       <div class="projects-grid">
         {{ range $projects }}
           {{ partial "project-card.html" . }}
         {{ end }}
       </div>
+      {{ end }}
     </div>
   </section>
   {{ end }}

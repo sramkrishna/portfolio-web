@@ -2,8 +2,8 @@
 title = "AI-Powered Development Assistant"
 description = "Building an intelligent code assistant that helps developers write better code with context-aware suggestions"
 date = 2025-10-16
-types = ["ai"]
-tags = ["Machine Learning", "Developer Tools", "Python"]
+types = ["tech"]
+tags = ["AI", "Machine Learning", "Developer Tools", "Python"]
 
 [[links]]
 name = "Learn More"
