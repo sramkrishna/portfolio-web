@@ -21,7 +21,9 @@ function initializeCarousel(carouselElement, cardSelector) {
   const track = carouselElement.querySelector('.projects-carousel-track, .talks-carousel-track');
   const prevButton = carouselElement.parentElement.querySelector('.carousel-prev');
   const nextButton = carouselElement.parentElement.querySelector('.carousel-next');
-  const indicatorsContainer = carouselElement.parentElement.querySelector('.carousel-indicators');
+  // Get the indicators container that's a sibling to this carousel's parent container
+  const section = carouselElement.closest('.project-type-section, .talks-section');
+  const indicatorsContainer = section?.querySelector('.carousel-indicators');
 
   if (!track) return;
 
