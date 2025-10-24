@@ -51,9 +51,12 @@ function initializeCarousel(carouselElement, cardSelector) {
   const wrapper = carouselElement.querySelector('.projects-carousel-wrapper, .talks-carousel-wrapper');
   const wrapperWidth = wrapper.clientWidth; // Use clientWidth to get content width without padding
 
+  // Get the actual computed gap from the track
+  const computedStyle = window.getComputedStyle(track);
+  const gap = parseFloat(computedStyle.gap) || 24; // Read actual gap or fallback to 24px
+
   // Calculate card width based on wrapper width and items per page
   // Account for gap between cards
-  const gap = 24; // var(--spacing-lg) is 24px
   const totalGapWidth = (itemsPerPage - 1) * gap;
   const cardWidth = (wrapperWidth - totalGapWidth) / itemsPerPage;
 
@@ -61,6 +64,15 @@ function initializeCarousel(carouselElement, cardSelector) {
   cards.forEach(card => {
     card.style.width = `${cardWidth}px`;
     card.style.minWidth = `${cardWidth}px`;
+  });
+
+  // Log actual measurements for debugging
+  console.log('Carousel measurements:', {
+    wrapperWidth,
+    computedGap: gap,
+    totalGapWidth,
+    cardWidth,
+    calculatedTotalWidth: (cardWidth * itemsPerPage) + totalGapWidth
   });
 
   // Debug logging
