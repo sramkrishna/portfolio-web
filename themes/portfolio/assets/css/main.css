@@ -637,6 +637,13 @@ section {
   min-height: 380px;
 }
 
+/* Fixed title height for event cards - 2 lines max to align descriptions */
+.project-type-events .project-card h3 {
+  -webkit-line-clamp: 2;
+  height: 3.6em; /* 2 lines at 1.4 line-height + padding */
+  line-height: 1.4;
+}
+
 /* Talk Card */
 .talk-card {
   background-color: var(--bg-secondary);
