@@ -23,9 +23,11 @@
     <div class="project-links">
       {{ with .Params.links }}
       {{ range . }}
+      {{ if ne .show_on_card false }}
       <a href="{{ .url }}" class="btn btn-link" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
         {{ .name }}
       </a>
+      {{ end }}
       {{ end }}
       {{ end }}
       <a href="{{ .RelPermalink }}" class="btn btn-link">
