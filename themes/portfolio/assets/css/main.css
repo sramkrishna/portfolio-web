@@ -210,6 +210,8 @@ nav .icon {
 main {
   min-height: calc(100vh - 200px);
   padding: var(--spacing-xl) 0;
+  position: relative;
+  z-index: 1;
 }
 
 /* Footer */
@@ -826,8 +828,8 @@ section {
 .project-single {
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 100px;
   padding: var(--spacing-2xl) var(--spacing-md);
-  padding-top: 120px;
 }
 
 .project-header {
