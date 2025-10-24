@@ -631,6 +631,12 @@ section {
   flex-shrink: 0;
 }
 
+/* Fixed height for event cards to ensure consistent sizing */
+.project-type-events .projects-carousel-track .project-card {
+  height: 380px;
+  min-height: 380px;
+}
+
 /* Talk Card */
 .talk-card {
   background-color: var(--bg-secondary);

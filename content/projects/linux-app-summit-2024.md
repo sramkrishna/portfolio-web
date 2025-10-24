@@ -2,8 +2,8 @@
 title = "Linux App Summit 2024"
 description = "A community conferenced focused on creating an app ecosystem for the Linux platform."
 date = 2024-10-04
-types = ["events"]  # Options: "gnome", "tech", "events"
-tags = ["community","linux","applications","desktop"]
+types = ["events"]  # Options: "projects", "tech", "events"
+tags = ["community", "linux", "applications", "desktop"]
 
 [[links]]
 name = "Agenda"

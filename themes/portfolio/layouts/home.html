@@ -10,7 +10,7 @@
 <!-- Projects by Type -->
 {{ $projectTypes := slice "projects" "tech" "events" }}
 {{ $typeNames := dict "projects" "Project Mgmt & Community Architect" "tech" "Tech Projects" "events" "Events" }}
-{{ $typeDescriptions := dict "projects" "Community building, project management, and leadership" "tech" "Technical projects and software development" "events" "Conferences and community events I've organized and led" }}
+{{ $typeDescriptions := dict "projects" "Community building, project management, and leadership within the last year" "tech" "Technical projects and software development within the last year" "events" "Conferences and community events I've organized and led within the last year" }}
 
 {{ range $projectTypes }}
   {{ $currentType := . }}
@@ -74,7 +74,7 @@
       {{ partial "icon-talks" . }}
       Talks
     </h2>
-    <p class="section-description">Presentations and speaking engagements</p>
+    <p class="section-description">Presentations and speaking engagements within the last year</p>
     <div class="talks-carousel">
       <button class="carousel-btn carousel-prev" aria-label="Previous talk">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

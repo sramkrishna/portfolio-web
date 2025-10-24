@@ -1,7 +1,7 @@
 +++
-title = "AI Devsummit 2025 AI App Devel"
-description = "Talk on the importance of Generative App Development"
-event = ""
+title = "Simplifying Generative AI App Development: Standardization Matters"
+description = "Talk on the importance of Generative App Development and standardization matters."
+event = "Intel AI DevSummit 2025"
 date = 2025-02-26
 location = "Virtual"
 talkstatuses = ["previous"]  # Options: "upcoming", "previous"
