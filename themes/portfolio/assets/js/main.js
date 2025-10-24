@@ -57,7 +57,9 @@ function initializeCarousel(carouselElement, cardSelector) {
 
   // Create indicators based on number of pages
   if (indicatorsContainer) {
+    console.log('Before clearing indicators:', indicatorsContainer.children.length);
     indicatorsContainer.innerHTML = '';
+    console.log('Creating', totalPages, 'indicators');
     for (let i = 0; i < totalPages; i++) {
       const indicator = document.createElement('button');
       indicator.classList.add('carousel-indicator');
@@ -65,6 +67,7 @@ function initializeCarousel(carouselElement, cardSelector) {
       if (i === 0) indicator.classList.add('active');
       indicator.addEventListener('click', () => goToPage(i));
       indicatorsContainer.appendChild(indicator);
+      console.log('Added indicator', i+1, 'of', totalPages, '- container now has', indicatorsContainer.children.length, 'children');
     }
   }
 
