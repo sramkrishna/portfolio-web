@@ -76,17 +76,21 @@ function initializeCarousel(carouselElement, cardSelector) {
   }
 
   function updateCarousel() {
+    console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
     // Move by itemsPerPage cards at a time
     const cardWidth = 100 / itemsPerPage; // 50% for 2 items, 100% for 1 item
     const offset = -currentPage * cardWidth * itemsPerPage;
     track.style.transform = `translateX(${offset}%)`;
+    console.log('After transform - indicators:', indicatorsContainer?.children.length);
 
     // Update indicators
     if (indicatorsContainer) {
       const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+      console.log('Found', indicators.length, 'indicator elements to update');
       indicators.forEach((indicator, index) => {
         indicator.classList.toggle('active', index === currentPage);
       });
+      console.log('After toggle - indicators:', indicatorsContainer.children.length);
     }
 
     // Update button states
