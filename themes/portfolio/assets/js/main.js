@@ -136,6 +136,11 @@ function initializeCarousel(carouselElement, cardSelector) {
 
   // Initialize
   updateCarousel();
+
+  // Debug: Check indicator count after initialization
+  setTimeout(() => {
+    console.log('After initialization, indicator container has', indicatorsContainer?.children.length, 'children');
+  }, 0);
 }
 
 console.log('Portfolio site loaded');
