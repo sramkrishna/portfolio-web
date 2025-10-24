@@ -49,7 +49,7 @@ function initializeCarousel(carouselElement, cardSelector) {
 
   // Get the carousel wrapper width to calculate card sizes
   const wrapper = carouselElement.querySelector('.projects-carousel-wrapper, .talks-carousel-wrapper');
-  const wrapperWidth = wrapper.offsetWidth;
+  const wrapperWidth = wrapper.clientWidth; // Use clientWidth to get content width without padding
 
   // Calculate card width based on wrapper width and items per page
   // Account for gap between cards
@@ -98,8 +98,9 @@ function initializeCarousel(carouselElement, cardSelector) {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
 
     // Calculate offset based on card width, gap, and current page
-    // Each page shows itemsPerPage cards with (itemsPerPage - 1) gaps between them
-    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * (itemsPerPage - 1)));
+    // To skip to the next page, we need to shift by: itemsPerPage cards + itemsPerPage gaps
+    // (the gap after the last card of the page needs to be included)
+    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * itemsPerPage));
     track.style.transform = `translateX(${offset}px)`;
     console.log('After transform - indicators:', indicatorsContainer?.children.length, 'offset:', offset);
 
