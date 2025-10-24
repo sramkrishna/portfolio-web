@@ -142,13 +142,13 @@ pre code {
 
 /* Header */
 header {
-  background-color: var(--bg-primary);
+  background-color: #1a1a1a;
   border-bottom: 1px solid var(--border-subtle);
   padding: var(--spacing-md) 0;
   position: sticky;
   top: 0;
   z-index: 900;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 header .container {
@@ -826,7 +826,11 @@ section {
 .project-single {
   max-width: 900px;
   margin: 0 auto;
-  padding: calc(var(--spacing-2xl) + 80px) var(--spacing-md) var(--spacing-2xl);
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.project-single article {
+  margin-top: 100px;
 }
 
 .project-header {
