@@ -4,7 +4,7 @@ title = "Sri's Portfolio"
 theme = 'portfolio'
 
 [params]
-  description = 'Sriram (Sri) Ramkrishna is a multi-disciplinary technologist who bridges technical leadership, community architecture, and event management across the open source ecosystem.'
+  description = 'Sriram (Sri) Ramkrishna is a multi-disciplinary technologist who bridges technical leadership, community architecture, and event management, while shaping the direction of the open source ecosystem.'
   author = 'Sriram Ramkrishna'
   headshot = '/images/sri-headshot.jpg'
 
