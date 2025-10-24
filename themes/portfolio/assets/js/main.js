@@ -110,9 +110,9 @@ function initializeCarousel(carouselElement, cardSelector) {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
 
     // Calculate offset based on card width, gap, and current page
-    // To skip to the next page, we need to shift by: itemsPerPage cards + itemsPerPage gaps
-    // (the gap after the last card of the page needs to be included)
-    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * itemsPerPage));
+    // Flexbox gap only appears BETWEEN items, so for N cards there are N-1 gaps
+    // Each page shift = itemsPerPage cards + (itemsPerPage - 1) gaps
+    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * (itemsPerPage - 1)));
     track.style.transform = `translateX(${offset}px)`;
     console.log('After transform - indicators:', indicatorsContainer?.children.length, 'offset:', offset);
 
