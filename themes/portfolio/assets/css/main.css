@@ -261,7 +261,7 @@ section {
 }
 
 .project-type-gnome .container,
-.project-type-ai .container,
+.project-type-tech .container,
 .project-type-events .container {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-yellow-faded);
