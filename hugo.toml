@@ -1,6 +1,6 @@
 baseURL = 'https://portfolio.ramkrishna.me/'
 languageCode = 'en-us'
-title = 'Portfolio'
+title = "Sri's Portfolio"
 theme = 'portfolio'
 
 [params]
