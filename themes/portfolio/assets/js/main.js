@@ -49,7 +49,8 @@ function initializeCarousel(carouselElement, cardSelector) {
     cardsCount: cards.length,
     itemsPerPage,
     totalPages,
-    sectionClass: carouselElement.closest('.project-type-section')?.className
+    sectionClass: section?.className,
+    hasIndicatorContainer: !!indicatorsContainer
   });
 
   let currentPage = 0;
