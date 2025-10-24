@@ -141,7 +141,7 @@ pre code {
 }
 
 /* Header */
-header {
+header:not(.project-header) {
   background-color: #1a1a1a;
   border-bottom: 1px solid var(--border-subtle);
   padding: var(--spacing-md) 0;
@@ -151,7 +151,7 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
-header .container {
+header:not(.project-header) .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
