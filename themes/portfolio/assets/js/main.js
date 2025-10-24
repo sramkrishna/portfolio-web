@@ -41,6 +41,15 @@ function initializeCarousel(carouselElement, cardSelector) {
   }
   const totalPages = Math.ceil(cards.length / itemsPerPage);
 
+  // Debug logging
+  console.log('Carousel initialized:', {
+    cardSelector,
+    cardsCount: cards.length,
+    itemsPerPage,
+    totalPages,
+    sectionClass: carouselElement.closest('.project-type-section')?.className
+  });
+
   let currentPage = 0;
 
   // Create indicators based on number of pages
