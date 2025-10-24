@@ -431,6 +431,7 @@ section {
   display: flex;
   gap: var(--spacing-sm);
   margin-top: var(--spacing-sm);
+  flex-wrap: wrap;
 }
 
 .btn {
