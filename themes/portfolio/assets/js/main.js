@@ -98,8 +98,8 @@ function initializeCarousel(carouselElement, cardSelector) {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
 
     // Calculate offset based on card width, gap, and current page
-    // Each page shows itemsPerPage cards, so offset by that many cards plus gaps
-    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * itemsPerPage));
+    // Each page shows itemsPerPage cards with (itemsPerPage - 1) gaps between them
+    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * (itemsPerPage - 1)));
     track.style.transform = `translateX(${offset}px)`;
     console.log('After transform - indicators:', indicatorsContainer?.children.length, 'offset:', offset);
 
