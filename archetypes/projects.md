@@ -4,11 +4,6 @@ description = ""
 date = {{ .Date }}
 types = ["gnome"]  # Options: "gnome", "tech", "events"
 tags = []
-
-[[links]]
-name = "Learn More"
-url = ""
-external = true
 +++
 
 ## Project Overview
