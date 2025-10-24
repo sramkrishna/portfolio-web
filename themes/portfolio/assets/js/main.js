@@ -47,10 +47,21 @@ function initializeCarousel(carouselElement, cardSelector) {
   }
   const totalPages = Math.ceil(cards.length / itemsPerPage);
 
-  // Set track width based on total cards and items per page
-  // Track needs to be wide enough to hold all cards in a row
-  const trackWidthPercent = (cards.length / itemsPerPage) * 100;
-  track.style.width = `${trackWidthPercent}%`;
+  // Get the carousel wrapper width to calculate card sizes
+  const wrapper = carouselElement.querySelector('.projects-carousel-wrapper, .talks-carousel-wrapper');
+  const wrapperWidth = wrapper.offsetWidth;
+
+  // Calculate card width based on wrapper width and items per page
+  // Account for gap between cards
+  const gap = 24; // var(--spacing-lg) is 24px
+  const totalGapWidth = (itemsPerPage - 1) * gap;
+  const cardWidth = (wrapperWidth - totalGapWidth) / itemsPerPage;
+
+  // Set each card's width explicitly
+  cards.forEach(card => {
+    card.style.width = `${cardWidth}px`;
+    card.style.minWidth = `${cardWidth}px`;
+  });
 
   // Debug logging
   console.log('Carousel initialized:', {
@@ -58,7 +69,9 @@ function initializeCarousel(carouselElement, cardSelector) {
     cardsCount: cards.length,
     itemsPerPage,
     totalPages,
-    trackWidthPercent,
+    wrapperWidth,
+    cardWidth,
+    gap,
     sectionClass: section?.className,
     hasIndicatorContainer: !!indicatorsContainer
   });
@@ -84,12 +97,11 @@ function initializeCarousel(carouselElement, cardSelector) {
   function updateCarousel() {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
 
-    // Calculate offset based on page number and items per page
-    // For pages with full sets of items, move by (100% * page)
-    // This accounts for the flex gap automatically
-    const offset = -(currentPage * 100);
-    track.style.transform = `translateX(${offset}%)`;
-    console.log('After transform - indicators:', indicatorsContainer?.children.length);
+    // Calculate offset based on card width, gap, and current page
+    // Each page shows itemsPerPage cards, so offset by that many cards plus gaps
+    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * itemsPerPage));
+    track.style.transform = `translateX(${offset}px)`;
+    console.log('After transform - indicators:', indicatorsContainer?.children.length, 'offset:', offset);
 
     // Update indicators
     if (indicatorsContainer) {
