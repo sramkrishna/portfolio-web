@@ -828,7 +828,7 @@ section {
 .project-single {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 80px;
   padding: var(--spacing-2xl) var(--spacing-md);
 }
 
