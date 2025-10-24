@@ -623,14 +623,14 @@ section {
 
 .projects-carousel-track {
   display: flex;
+  gap: var(--spacing-lg);
   transition: transform 0.3s ease;
 }
 
 .projects-carousel-track .project-card {
-  min-width: 100%;
-  width: 100%;
+  min-width: calc(50% - var(--spacing-lg) / 2);
+  width: calc(50% - var(--spacing-lg) / 2);
   flex-shrink: 0;
-  margin-right: 0;
 }
 
 /* Talk Card */

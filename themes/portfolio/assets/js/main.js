@@ -28,57 +28,64 @@ function initializeCarousel(carouselElement, cardSelector) {
   const cards = Array.from(track.querySelectorAll(cardSelector));
   if (cards.length === 0) return;
 
-  let currentIndex = 0;
+  // For project carousels, show 2 items per page
+  // For talks carousels, show 1 item per page
+  const itemsPerPage = cardSelector === '.project-card' ? 2 : 1;
+  const totalPages = Math.ceil(cards.length / itemsPerPage);
 
-  // Create indicators
+  let currentPage = 0;
+
+  // Create indicators based on number of pages
   if (indicatorsContainer) {
     indicatorsContainer.innerHTML = '';
-    cards.forEach((_, index) => {
+    for (let i = 0; i < totalPages; i++) {
       const indicator = document.createElement('button');
       indicator.classList.add('carousel-indicator');
-      indicator.setAttribute('aria-label', `Go to slide ${index + 1}`);
-      if (index === 0) indicator.classList.add('active');
-      indicator.addEventListener('click', () => goToSlide(index));
+      indicator.setAttribute('aria-label', `Go to page ${i + 1}`);
+      if (i === 0) indicator.classList.add('active');
+      indicator.addEventListener('click', () => goToPage(i));
       indicatorsContainer.appendChild(indicator);
-    });
+    }
   }
 
   function updateCarousel() {
-    const offset = -currentIndex * 100;
+    // Move by itemsPerPage cards at a time
+    const cardWidth = 100 / itemsPerPage; // 50% for 2 items, 100% for 1 item
+    const offset = -currentPage * cardWidth * itemsPerPage;
     track.style.transform = `translateX(${offset}%)`;
 
     // Update indicators
     if (indicatorsContainer) {
       const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
       indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentIndex);
+        indicator.classList.toggle('active', index === currentPage);
       });
     }
 
     // Update button states
     if (prevButton) {
-      prevButton.disabled = currentIndex === 0;
+      prevButton.disabled = currentPage === 0;
     }
     if (nextButton) {
-      nextButton.disabled = currentIndex === cards.length - 1;
+      nextButton.disabled = currentPage === totalPages - 1;
     }
   }
 
-  function goToSlide(index) {
-    currentIndex = Math.max(0, Math.min(index, cards.length - 1));
+  function goToPage(pageIndex) {
+    currentPage = Math.max(0, Math.min(pageIndex, totalPages - 1));
     updateCarousel();
   }
 
   function nextSlide() {
-    if (currentIndex < cards.length - 1) {
-      currentIndex++;
+    if (currentPage < totalPages - 1) {
+      currentPage++;
       updateCarousel();
     }
   }
 
   function prevSlide() {
-    if (currentIndex > 0) {
-      currentIndex--;
+    if (currentPage > 0) {
+      currentPage--;
       updateCarousel();
     }
   }
