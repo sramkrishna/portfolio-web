@@ -212,14 +212,14 @@ main {
 }
 
 /* Footer */
-footer {
+footer:not(.project-footer) {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-subtle);
   padding: var(--spacing-lg) 0;
   margin-top: var(--spacing-2xl);
 }
 
-footer .container {
+footer:not(.project-footer) .container {
   text-align: center;
   color: var(--text-muted);
 }
