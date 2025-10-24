@@ -1,7 +1,7 @@
 +++
 title = "UXL Developer Summit 2025 hosted by UXL Foundation, Sept 17, 2025"
 description = "Community Developer Conference"
-date = 2025-10-24T11:44:58-07:00
+date = 2025-09-17
 types = ["events"]  # Options: "gnome", "tech", "events"
 tags = ["HPC", "AI", "Event Planning", "Developer", "Community", "Industry"]
 

@@ -15,6 +15,7 @@
 {{ range $projectTypes }}
   {{ $currentType := . }}
   {{ $projects := where (where site.RegularPages "Section" "projects") ".Params.types" "intersect" (slice $currentType) }}
+  {{ $projects = $projects.ByDate.Reverse }}
   {{ if $projects }}
   <section class="project-type-section project-type-{{ $currentType }}" data-type="{{ $currentType }}">
     <div class="container">

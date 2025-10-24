@@ -1,7 +1,7 @@
 +++
 title = "oneAPI DevSummit Hosted by UXL Foundation 2024, Oct 9-10, 2024"
 description = "Industry Developer Conference focused on oneAPI"
-date = 2025-10-15
+date = 2024-10-09
 types = ["events"]
 tags = ["Conference", "Event Planning", "Industry", "Community"]
 
