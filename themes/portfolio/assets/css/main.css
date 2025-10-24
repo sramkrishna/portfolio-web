@@ -409,6 +409,8 @@ section {
 
 .project-footer {
   margin-top: auto;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .project-tags {
@@ -431,6 +433,8 @@ section {
   display: flex;
   gap: var(--spacing-sm);
   margin-top: var(--spacing-sm);
+  margin-left: 0;
+  padding-left: 0;
   flex-wrap: wrap;
 }
 
@@ -442,6 +446,8 @@ section {
   text-align: center;
   transition: all 0.2s ease;
   border: 2px solid transparent;
+  margin: 0;
+  text-decoration: none;
 }
 
 .btn-primary {
