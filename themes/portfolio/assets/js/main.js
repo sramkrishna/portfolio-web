@@ -77,9 +77,14 @@ function initializeCarousel(carouselElement, cardSelector) {
 
   function updateCarousel() {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
-    // Move by itemsPerPage cards at a time
+    // Calculate how many cards to show on this page
+    const startIndex = currentPage * itemsPerPage;
+    const remainingCards = cards.length - startIndex;
+    const cardsOnThisPage = Math.min(itemsPerPage, remainingCards);
+
+    // Move by the actual number of cards we need to skip
     const cardWidth = 100 / itemsPerPage; // 50% for 2 items, 100% for 1 item
-    const offset = -currentPage * cardWidth * itemsPerPage;
+    const offset = -startIndex * cardWidth;
     track.style.transform = `translateX(${offset}%)`;
     console.log('After transform - indicators:', indicatorsContainer?.children.length);
 
