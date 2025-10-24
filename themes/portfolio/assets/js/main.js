@@ -109,12 +109,12 @@ function initializeCarousel(carouselElement, cardSelector) {
   function updateCarousel() {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
 
-    // Calculate offset based on card width, gap, and current page
-    // Flexbox gap only appears BETWEEN items, so for N cards there are N-1 gaps
-    // Each page shift = itemsPerPage cards + (itemsPerPage - 1) gaps
-    const offset = -(currentPage * (cardWidth * itemsPerPage + gap * (itemsPerPage - 1)));
+    // Calculate the starting position of the first card on this page
+    // With flexbox gap, card N is positioned at: N × (cardWidth + gap)
+    const firstCardIndex = currentPage * itemsPerPage;
+    const offset = -(firstCardIndex * (cardWidth + gap));
     track.style.transform = `translateX(${offset}px)`;
-    console.log('After transform - indicators:', indicatorsContainer?.children.length, 'offset:', offset);
+    console.log('After transform - page:', currentPage, 'firstCardIndex:', firstCardIndex, 'offset:', offset);
 
     // Update indicators
     if (indicatorsContainer) {
