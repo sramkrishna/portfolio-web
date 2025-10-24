@@ -6,13 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function initializeCarousels() {
   // Initialize project carousels
   const projectCarousels = document.querySelectorAll('.projects-carousel');
-  projectCarousels.forEach(carousel => {
+  console.log('Found', projectCarousels.length, 'project carousels');
+  projectCarousels.forEach((carousel, index) => {
+    console.log('Initializing project carousel', index + 1, 'of', projectCarousels.length);
     initializeCarousel(carousel, '.project-card');
   });
 
   // Initialize talks carousel
   const talksCarousels = document.querySelectorAll('.talks-carousel');
-  talksCarousels.forEach(carousel => {
+  console.log('Found', talksCarousels.length, 'talks carousels');
+  talksCarousels.forEach((carousel, index) => {
+    console.log('Initializing talks carousel', index + 1, 'of', talksCarousels.length);
     initializeCarousel(carousel, '.talk-card');
   });
 }
