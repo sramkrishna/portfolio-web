@@ -20,15 +20,18 @@
     </div>
     {{ end }}
 
-    {{ with .Params.links }}
     <div class="project-links">
+      {{ with .Params.links }}
       {{ range . }}
       <a href="{{ .url }}" class="btn btn-link" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
         {{ .name }}
       </a>
       {{ end }}
+      {{ end }}
+      <a href="{{ .RelPermalink }}" class="btn btn-link">
+        View Details
+      </a>
     </div>
-    {{ end }}
   </div>
 </article>
 
