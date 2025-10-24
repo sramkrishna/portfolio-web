@@ -623,14 +623,18 @@ section {
 
 .projects-carousel-track {
   display: flex;
-  gap: var(--spacing-lg);
   transition: transform 0.3s ease;
 }
 
 .projects-carousel-track .project-card {
-  min-width: calc(50% - var(--spacing-lg) / 2);
-  width: calc(50% - var(--spacing-lg) / 2);
+  min-width: calc(50% - var(--spacing-lg));
+  width: calc(50% - var(--spacing-lg));
   flex-shrink: 0;
+  margin-right: var(--spacing-lg);
+}
+
+.projects-carousel-track .project-card:last-child {
+  margin-right: 0;
 }
 
 /* Projects section shows 3 cards per page */

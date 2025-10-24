@@ -47,12 +47,18 @@ function initializeCarousel(carouselElement, cardSelector) {
   }
   const totalPages = Math.ceil(cards.length / itemsPerPage);
 
+  // Set track width based on total cards and items per page
+  // Track needs to be wide enough to hold all cards in a row
+  const trackWidthPercent = (cards.length / itemsPerPage) * 100;
+  track.style.width = `${trackWidthPercent}%`;
+
   // Debug logging
   console.log('Carousel initialized:', {
     cardSelector,
     cardsCount: cards.length,
     itemsPerPage,
     totalPages,
+    trackWidthPercent,
     sectionClass: section?.className,
     hasIndicatorContainer: !!indicatorsContainer
   });
@@ -77,14 +83,11 @@ function initializeCarousel(carouselElement, cardSelector) {
 
   function updateCarousel() {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
-    // Calculate how many cards to show on this page
-    const startIndex = currentPage * itemsPerPage;
-    const remainingCards = cards.length - startIndex;
-    const cardsOnThisPage = Math.min(itemsPerPage, remainingCards);
 
-    // Move by the actual number of cards we need to skip
-    const cardWidth = 100 / itemsPerPage; // 50% for 2 items, 100% for 1 item
-    const offset = -startIndex * cardWidth;
+    // Calculate offset based on page number and items per page
+    // For pages with full sets of items, move by (100% * page)
+    // This accounts for the flex gap automatically
+    const offset = -(currentPage * 100);
     track.style.transform = `translateX(${offset}%)`;
     console.log('After transform - indicators:', indicatorsContainer?.children.length);
 
