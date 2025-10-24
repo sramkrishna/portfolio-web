@@ -17,13 +17,15 @@ url = "https://www.youtube.com/live/ADwZXaOSe9U?si=yDeLbgQ5dgJ9XMP-&t=18952"
 type = "conference"
 +++
 
-## Abstract
+### Abstract
 
 Exploring the latest developments in AI-powered development tools and their impact on developer workflows, from code completion to automated testing.
 
 ### Key Points
 
-- Evolution of AI coding assistants
-- Real-world productivity gains
-- Best practices for AI-assisted development
-- Future trends and predictions
+- Community can provide scalability if we include them by creating assets in documentation and code samples.
+- Creating a library of code samples will allow AI to automatically be trained on it. With coding AI agents becoming popular we can provide them with training material for more accurate results.
+
+### Notes 
+
+The talk was well received. 
