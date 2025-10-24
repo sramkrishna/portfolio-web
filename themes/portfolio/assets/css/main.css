@@ -633,6 +633,12 @@ section {
   flex-shrink: 0;
 }
 
+/* GNOME section shows 3 cards per page */
+.project-type-gnome .projects-carousel-track .project-card {
+  min-width: calc(33.333% - var(--spacing-lg) * 2 / 3);
+  width: calc(33.333% - var(--spacing-lg) * 2 / 3);
+}
+
 /* Talk Card */
 .talk-card {
   background-color: var(--bg-secondary);

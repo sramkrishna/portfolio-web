@@ -28,9 +28,17 @@ function initializeCarousel(carouselElement, cardSelector) {
   const cards = Array.from(track.querySelectorAll(cardSelector));
   if (cards.length === 0) return;
 
-  // For project carousels, show 2 items per page
-  // For talks carousels, show 1 item per page
-  const itemsPerPage = cardSelector === '.project-card' ? 2 : 1;
+  // Determine items per page based on section type
+  let itemsPerPage = 1; // default for talks
+  if (cardSelector === '.project-card') {
+    // Check if we're in the GNOME section
+    const section = carouselElement.closest('.project-type-section');
+    if (section && section.classList.contains('project-type-gnome')) {
+      itemsPerPage = 3; // GNOME shows 3 items per page
+    } else {
+      itemsPerPage = 2; // Events/Tech show 2 items per page
+    }
+  }
   const totalPages = Math.ceil(cards.length / itemsPerPage);
 
   let currentPage = 0;

@@ -16,9 +16,6 @@
   {{ $currentType := . }}
   {{ $projects := where (where site.RegularPages "Section" "projects") ".Params.types" "intersect" (slice $currentType) }}
   {{ $projects = $projects.ByDate.Reverse }}
-  {{ if eq $currentType "gnome" }}
-    {{ $projects = first 3 $projects }}
-  {{ end }}
   {{ if $projects }}
   <section class="project-type-section project-type-{{ $currentType }}" data-type="{{ $currentType }}">
     <div class="container">
