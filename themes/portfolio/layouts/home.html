@@ -8,9 +8,9 @@
 </section>
 
 <!-- Projects by Type -->
-{{ $projectTypes := slice "gnome" "tech" "events" }}
-{{ $typeNames := dict "gnome" "Project Mgmt & Community Architect" "tech" "Tech Projects" "events" "Events" }}
-{{ $typeDescriptions := dict "gnome" "Community building, project management, and leadership" "tech" "Technical projects and software development" "events" "Conferences and community events I've organized and led" }}
+{{ $projectTypes := slice "projects" "tech" "events" }}
+{{ $typeNames := dict "projects" "Project Mgmt & Community Architect" "tech" "Tech Projects" "events" "Events" }}
+{{ $typeDescriptions := dict "projects" "Community building, project management, and leadership" "tech" "Technical projects and software development" "events" "Conferences and community events I've organized and led" }}
 
 {{ range $projectTypes }}
   {{ $currentType := . }}
@@ -20,7 +20,7 @@
   <section class="project-type-section project-type-{{ $currentType }}" data-type="{{ $currentType }}">
     <div class="container">
       <h2 class="section-title">
-        {{ if eq $currentType "gnome" }}
+        {{ if eq $currentType "projects" }}
           {{ partial "icon-gnome" . }}
         {{ else if eq $currentType "tech" }}
           {{ partial "icon-ai" . }}

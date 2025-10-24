@@ -262,7 +262,7 @@ section {
   margin: 0;
 }
 
-.project-type-gnome .container,
+.project-type-projects .container,
 .project-type-tech .container,
 .project-type-events .container {
   background-color: var(--bg-primary);
@@ -633,8 +633,8 @@ section {
   flex-shrink: 0;
 }
 
-/* GNOME section shows 3 cards per page */
-.project-type-gnome .projects-carousel-track .project-card {
+/* Projects section shows 3 cards per page */
+.project-type-projects .projects-carousel-track .project-card {
   min-width: calc(33.333% - var(--spacing-lg) * 2 / 3);
   width: calc(33.333% - var(--spacing-lg) * 2 / 3);
 }

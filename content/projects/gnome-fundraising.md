@@ -2,7 +2,7 @@
 title = "GNOME Foundation Fundraising"
 description = "Supporting fundraising initiatives and donor relations for the GNOME Foundation"
 date = 2025-10-17
-types = ["gnome"]
+types = ["projects"]
 tags = ["Fundraising", "Community", "Nonprofit"]
 
 [[links]]

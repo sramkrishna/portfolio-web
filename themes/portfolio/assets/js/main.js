@@ -31,10 +31,10 @@ function initializeCarousel(carouselElement, cardSelector) {
   // Determine items per page based on section type
   let itemsPerPage = 1; // default for talks
   if (cardSelector === '.project-card') {
-    // Check if we're in the GNOME section
+    // Check if we're in the Projects section
     const section = carouselElement.closest('.project-type-section');
-    if (section && section.classList.contains('project-type-gnome')) {
-      itemsPerPage = 3; // GNOME shows 3 items per page
+    if (section && section.classList.contains('project-type-projects')) {
+      itemsPerPage = 3; // Projects shows 3 items per page
     } else {
       itemsPerPage = 2; // Events/Tech show 2 items per page
     }

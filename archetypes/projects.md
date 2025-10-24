@@ -2,7 +2,7 @@
 title = "{{ replace .File.ContentBaseName "-" " " | title }}"
 description = ""
 date = {{ .Date }}
-types = ["tech"]  # Options: "gnome", "tech", "events"
+types = ["tech"]  # Options: "projects", "tech", "events"
 tags = []
 +++
 

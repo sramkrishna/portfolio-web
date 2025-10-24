@@ -2,7 +2,7 @@
 title = "GNOME Internship Programs"
 description = "Managing and coordinating internship programs including Outreachy and Google Summer of Code for GNOME projects"
 date = 2025-10-18
-types = ["gnome"]
+types = ["projects"]
 tags = ["Internships", "Mentorship", "Education", "Outreachy", "Google Summer of Code"]
 
 [[links]]
