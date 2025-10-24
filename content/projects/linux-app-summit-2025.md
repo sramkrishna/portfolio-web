@@ -1,13 +1,18 @@
 +++
 title = "Linux App Summit 2025"
-description = ""
-date = 2025-10-24T13:51:10-07:00
+description = "Open Source Community Conference focused on applications for Linux"
+date = 2025-04-25
 types = ["events"]  # Options: "gnome", "tech", "events"
 tags = ["community", "linux", "event management"]
 
 [[links]]
-name = "Learn More"
-url = ""
+name = "Agenda"
+url = "https://conf.linuxappsummit.org/event/7/timetable"
+external = true
+
+[[links]]
+name = "Video"
+url = "https://www.youtube.com/watch?v=3HkYJ7M119I"
 external = true
 +++
 
