@@ -827,10 +827,7 @@ section {
   max-width: 900px;
   margin: 0 auto;
   padding: var(--spacing-2xl) var(--spacing-md);
-}
-
-.project-single article {
-  margin-top: 100px;
+  padding-top: 120px;
 }
 
 .project-header {
