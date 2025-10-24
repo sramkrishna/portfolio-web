@@ -1,7 +1,7 @@
 +++
 title = "Intel AI Summit 2025"
-description = ""
-date = 2025-10-24T12:34:13-07:00
+description = "Two-day AI developer conference - February 26-27, 2025"
+date = 2025-02-26
 types = ["events"]  # Options: "gnome", "tech", "events"
 tags = ["Industry", "oneAPI", "AI", "Event Management"]
 
