@@ -110,11 +110,17 @@ function initializeCarousel(carouselElement, cardSelector) {
     console.log('updateCarousel START - indicators:', indicatorsContainer?.children.length);
 
     // Calculate the starting position of the first card on this page
-    // With flexbox gap, card N is positioned at: N × (cardWidth + gap)
-    const firstCardIndex = currentPage * itemsPerPage;
-    const offset = -(firstCardIndex * (cardWidth + gap));
+    let offset;
+    if (itemsPerPage === 1) {
+      // For single-item carousels, just shift by wrapper width to avoid gap offset issues
+      offset = -(currentPage * wrapperWidth);
+    } else {
+      // With flexbox gap, card N is positioned at: N × (cardWidth + gap)
+      const firstCardIndex = currentPage * itemsPerPage;
+      offset = -(firstCardIndex * (cardWidth + gap));
+    }
     track.style.transform = `translateX(${offset}px)`;
-    console.log('After transform - page:', currentPage, 'firstCardIndex:', firstCardIndex, 'offset:', offset);
+    console.log('After transform - page:', currentPage, 'offset:', offset);
 
     // Update indicators
     if (indicatorsContainer) {
