@@ -17,13 +17,10 @@ Supporting the GNOME Foundation's fundraising efforts through campaign coordinat
 
 ### Responsibilities
 
-- Coordinating annual fundraising campaigns
-- Managing donor communications and recognition
-- Creating fundraising materials and messaging
-- Organizing fundraising events
+- Coordinating fundraising campaigns.
+- anaging donor communications and recognition.
+- Creating fundraising materials and messaging in collaboration with the design and web teams.
+- Work with the board to coordinate what areas need to be effectively fundraise.
 
 ### Achievements
 
-- Contributed to successful annual fundraising campaigns
-- Developed donor engagement strategies
-- Strengthened relationships with corporate sponsors

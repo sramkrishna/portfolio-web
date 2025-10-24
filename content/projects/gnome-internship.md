@@ -3,7 +3,7 @@ title = "GNOME Internship Programs"
 description = "Managing and coordinating internship programs including Outreachy and Google Summer of Code for GNOME projects"
 date = 2025-10-18
 types = ["gnome"]
-tags = ["Internships", "Mentorship", "Education"]
+tags = ["Internships", "Mentorship", "Education", "Outreachy", "Google Summer of Code"]
 
 [[links]]
 name = "Learn More"
@@ -13,7 +13,7 @@ external = true
 
 ## Program Overview
 
-Coordinating GNOME's participation in major internship programs, connecting aspiring contributors with mentors and meaningful projects.
+Coordinating GNOME's participation in outreachy and Google Summer of Code internship programs, connecting aspiring contributors with mentors and meaningful projects.
 
 ### Key Activities
 
@@ -24,6 +24,6 @@ Coordinating GNOME's participation in major internship programs, connecting aspi
 
 ### Impact
 
-- Mentored 15+ interns across multiple programs
-- Established sustainable mentorship framework
-- Improved intern retention and continuation as contributors
+- Approved projects that GNOME will spend $5k per internship 2x YoY.
+- Coordinated with the board to approve internships
+- Improved the internship experience and reduce mentorship burnout

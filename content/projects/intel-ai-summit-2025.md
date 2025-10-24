@@ -3,19 +3,53 @@ title = "Intel AI Summit 2025"
 description = "Two-day AI developer conference - February 26-27, 2025"
 date = 2025-02-26
 types = ["events"]  # Options: "gnome", "tech", "events"
-tags = ["Industry", "oneAPI", "AI", "Event Management"]
+tags = ["Industry","AI", "Event Management"]
 
 [[links]]
 name = "Agenda"
 url = "https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/Empower-Your-AI-Journey-Intel-AI-DevSummit-2025/post/1668896"
 external = true
+
+[[links]]
+name = "Video"
+url = "https://www.youtube.com/watch?v=ck3LisAYSkI"
+external = true
 +++
 
 ## Conference Overview
 
-Two-day AI focused developer summit focused on AI using Intel technologies. Unfortunately, with Intel laying off the developer relations team and the associated web team, there is no longer a specific link to the published agenda. However, video recordings are available.
+Two-day AI focused developer summit focused on AI using Intel
+technologies. Unfortunately, with Intel laying off the developer relations
+team and the associated web team, there is no longer a specific link to
+the published agenda. However, video recordings are available.
+
+
+### Key Responsibilities
+
+- Co-hosted and served as Master of Ceremonies for both days
+- Opened and closed sessions with Susan Kahler
+- Participated as speaker in "Simplifying Generative AI App Development: Standardization Matters" session
+- Created run of show script
+- Managed every aspect of this conference
+
+### Impact
+
+- Two-day comprehensive AI developer conference
+- Featured 20+ technical sessions covering LLM deployment, RAG applications, AI PC development, and hands-on workshops
+- Brought together industry experts, researchers, and practitioners from diverse organizations
+
+
+## Video replay
+
+Click on the video replay button and then on the right sidebar click on
+"From the series" and you should be able to get msot of content from
+this conference.
 
 ## Event Schedule
+
+Due to Intel layoffs the original schedule is no longer available
+from Intel Developer Zone. As I was the organizer I have recreated the
+schedule. The video replay should have most of it.
 
 ### Day 1 - Wednesday
 
@@ -50,15 +84,3 @@ Two-day AI focused developer summit focused on AI using Intel technologies. Unfo
 | 02:50pm - 03:35pm | AI for Daily Efficiency: The Productivity Revolution by kAI | Kelvin Perea, Manuel Meza, Gilberto Pardo |
 | 03:40pm - 04:25pm | Building private LLM-powered second brain on Intel CPU | Pradeep Sharma |
 | 04:25pm - 04:40pm | Closing Session Day 2 | Sriram Ramkrishna, Susan Kahler |
-
-### Key Responsibilities
-
-- Co-hosted and served as Master of Ceremonies for both days
-- Opened and closed sessions with Susan Kahler
-- Participated as speaker in "Simplifying Generative AI App Development: Standardization Matters" session
-
-### Impact
-
-- Two-day comprehensive AI developer conference
-- Featured 20+ technical sessions covering LLM deployment, RAG applications, AI PC development, and hands-on workshops
-- Brought together industry experts, researchers, and practitioners from diverse organizations
