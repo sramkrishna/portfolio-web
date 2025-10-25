@@ -30,11 +30,11 @@ Brief overview of the project.
 
 ### Key Responsibilities
 
--
--
--
+- Define the theme for each year
+- Outreach to developers and speakers
+- Fundraising and sponsorship 
 
 ### Impact
 
--
--
+- Excellent reception
+- Inteerst by other orgs to possibly help host the conference

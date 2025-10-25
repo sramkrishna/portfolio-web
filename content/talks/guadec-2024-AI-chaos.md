@@ -19,14 +19,14 @@ type = "video"  # Options: "video", "slides", "conference"
 
 ## Talk Summary
 
-Brief summary of the talk content.
+It's a hot new trend! So much hype but it's not something that is going to go away. As a project, we need to talk about about what's happening in this space and what we should do as a project from nothing to or to do some enabling. We'll talk about what is happening in AI space and what to watch out for.
 
 ### Topics Discussed
 
--
--
--
+- AI/ML and some educational background around its concepts
+- How it helps maintain software
+- Key issues today
 
 ### Audience Feedback
 
-Feedback received from attendees (for previous talks).
+Was well received.
