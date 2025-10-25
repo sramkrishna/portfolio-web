@@ -18,8 +18,8 @@
   <div class="talk-location">📍 {{ . }}</div>
   {{ end }}
 
-  {{ with .Params.links }}
   <div class="talk-links">
+    {{ with .Params.links }}
     {{ range . }}
     {{ if eq .type "video" }}
     <a href="{{ .url }}" class="btn btn-video" target="_blank" rel="noopener">
@@ -38,6 +38,9 @@
     </a>
     {{ end }}
     {{ end }}
+    {{ end }}
+    <a href="{{ .RelPermalink }}" class="btn btn-link">
+      Learn More
+    </a>
   </div>
-  {{ end }}
 </article>
