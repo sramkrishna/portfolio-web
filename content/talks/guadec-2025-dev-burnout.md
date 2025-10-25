@@ -14,7 +14,7 @@ type = "conference"
 [[links]]
 name = "Video"
 url = "https://www.youtube.com/live/ADwZXaOSe9U?si=yDeLbgQ5dgJ9XMP-&t=18952"
-type = "conference"
+type = "video"
 +++
 
 ### Abstract
