@@ -14,7 +14,7 @@ theme = 'portfolio'
 
 [[menus.main]]
   name = 'About'
-  pageRef = '/about'
+  url = '/#about'
   weight = 10
 
 [[menus.main]]
