@@ -1,30 +1,31 @@
-/* GNOME Dark Theme - Portfolio */
+/* Refined Dark Theme - Portfolio */
+/* Professional palette: restrained blue accent, neutral grays, no loud primaries */
 
 :root {
   /* Background Colors */
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #2a2a2a;
-  --bg-tertiary: #3a3a3a;
+  --bg-primary: #14161a;
+  --bg-secondary: #1c1f26;
+  --bg-tertiary: #262a33;
 
   /* Accent Colors */
-  --color-blue: #3584e4;
-  --color-blue-light: #62a0ea;
-  --color-green: #33D17A;
-  --color-yellow: #f9f06b;
-  --color-gold: #f6d32d;
-  --color-orange: #FF7800;
-  --color-purple: #9141AC;
-  --color-red: #E01B24;
+  --color-blue: #4a8fe7;
+  --color-blue-light: #7ab0f0;
+  --color-green: #3d9d6d;
+  --color-yellow: #4a8fe7;      /* repurposed → blue accent */
+  --color-gold: #4a8fe7;        /* repurposed → blue accent */
+  --color-orange: #c47a3d;
+  --color-purple: #7a6bb5;
+  --color-red: #c05555;
 
   /* Text Colors */
-  --text-primary: #F6F5F4;
-  --text-secondary: #C0BFBC;
-  --text-muted: #77767B;
+  --text-primary: #e8eaee;
+  --text-secondary: #a8aeb8;
+  --text-muted: #6b7280;
 
   /* Borders & Dividers */
-  --border-color: #77767B;
-  --border-subtle: #5e5c64;
-  --border-yellow-faded: rgba(249, 240, 107, 0.3);
+  --border-color: #3a3f4a;
+  --border-subtle: #2f343d;
+  --border-yellow-faded: rgba(74, 143, 231, 0.18);  /* blue-tinted, subtle */
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -40,7 +41,7 @@
 
   /* Layout */
   --max-width: 1200px;
-  --border-radius: 8px;
+  --border-radius: 6px;
 }
 
 /* Reset & Base Styles */
@@ -142,8 +143,8 @@ pre code {
 
 /* Header */
 header:not(.project-header) {
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #d25aa4;
+  background-color: #14161a;
+  border-bottom: 1px solid var(--border-subtle);
   padding: var(--spacing-md) 0;
   position: sticky;
   top: 0;
@@ -462,9 +463,9 @@ section {
 
 .btn-primary:hover {
   background-color: var(--bg-tertiary);
-  border-color: var(--color-yellow);
+  border-color: var(--color-blue);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(249, 240, 107, 0.2);
+  box-shadow: 0 4px 8px rgba(74, 143, 231, 0.15);
 }
 
 .btn-link {
