@@ -8,7 +8,7 @@ talkstatuses = ["complete"]
 
 [[links]]
 name = "Video"
-url = "https://www.youtube.com/watch?v=inVHYzdTWSE"
+url = "https://www.youtube.com/watch?v=inVHYzdTWSE&t=2s"
 type = "video"
 +++
 
