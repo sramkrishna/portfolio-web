@@ -8,7 +8,7 @@ talkstatuses = ["previous"]  # Options: "upcoming", "previous"
 
 [[links]]
 name = "Video"
-url = "https://www.youtube.com/watch?v=X-Ae9BqwTHQ"
+url = "https://www.youtube.com/watch?v=50VSdOlmmLA"
 type = "video"
 +++
 
