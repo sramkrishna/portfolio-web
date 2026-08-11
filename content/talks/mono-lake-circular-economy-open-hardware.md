@@ -1,15 +1,20 @@
 +++
 title = "The Mono Lake Story — How the Circular Economy Enables Open Hardware"
 description = "A talk on how the circular economy enables open hardware — sustainability, refurbishment, and the hardware ecosystem"
-event = "Open Hardware / Professional Talk"
-date = 2025-01-15
-location = "Online"
+event = "SCaLE 19x (Southern California Linux Expo)"
+date = 2022-07-31
+location = "Pasadena, California US"
 talkstatuses = ["complete"]
 
 [[links]]
 name = "Video"
 url = "https://www.youtube.com/watch?v=zu4tsLBtAO0"
 type = "video"
+
+[[links]]
+name = "Event Page"
+url = "https://www.socallinuxexpo.org/scale/19x/presentations/mono-lake-story-how-circular-economy-enables-open-hardware/"
+type = "conference"
 +++
 
 ## Talk Summary
