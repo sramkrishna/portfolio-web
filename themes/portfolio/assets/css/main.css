@@ -231,6 +231,30 @@ footer:not(.project-footer) .container {
 .hero {
   padding: var(--spacing-2xl) 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('/images/earth-at-night.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-attachment: fixed;
+  filter: brightness(0.32) saturate(0.5) contrast(1.05);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(14, 16, 20, 0.55) 0%, rgba(14, 16, 20, 0.25) 40%, rgba(14, 16, 20, 0.65) 80%, var(--bg-primary) 100%);
+  pointer-events: none;
 }
 
 .hero h1 {
