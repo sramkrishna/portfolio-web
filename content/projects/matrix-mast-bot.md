@@ -37,4 +37,4 @@ Matrix bot joining the homeserver (gnome.org), no exposed ports — purely room-
 
 ### Impact
 
-**In daily use by the GNOME Engagement Team — multiple boosts per day.** The bot is a working part of how the GNOME community amplifies its members' posts across the fediverse.
+**Deployed in production** — in daily use by the GNOME Engagement Team with multiple boosts per day. The bot is a working part of how the GNOME community amplifies its members' posts across the fediverse.
