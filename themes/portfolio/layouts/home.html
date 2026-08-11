@@ -99,6 +99,29 @@
 </section>
 {{ end }}
 
+<!-- Experience Section -->
+<section class="experience-section">
+  <div class="container">
+    <h2 class="section-title">
+      {{ partial "icon-gnome" . }}
+      Experience
+    </h2>
+    <p class="section-description">Professional career across open source, enterprise IT, and developer ecosystems</p>
+    <div class="experience-timeline">
+      {{ range sort site.Params.experience "start" "desc" }}
+      <div class="experience-item">
+        <div class="experience-role">
+          <h3>{{ .role }}</h3>
+          <span class="experience-org">{{ .org }}</span>
+          <span class="experience-date">{{ .start }} – {{ with .end }}{{ . }}{{ else }}Present{{ end }}</span>
+        </div>
+        <div class="experience-desc">{{ .description | markdownify }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
 <!-- About Section -->
 {{ with .Content }}
 <section id="about" class="about-section">

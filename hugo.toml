@@ -8,6 +8,41 @@ theme = 'portfolio'
   author = 'Sriram Ramkrishna'
   headshot = '/images/sri-headshot.jpg'
 
+  [[params.experience]]
+  role = "President, Board of Directors"
+  org = "GNOME Foundation"
+  start = "2026"
+  end = "Present"
+  description = "Leading the GNOME Foundation Board — governance, community leadership, and strategic direction for one of the largest open source desktop communities."
+
+  [[params.experience]]
+  role = "Board Member"
+  org = "GNOME Foundation"
+  start = "2026"
+  end = "2026"
+  description = "Board service focused on financial oversight and sustainable fundraising for the foundation."
+
+  [[params.experience]]
+  role = "Principal Ecosystems Engineer"
+  org = "ITRenew"
+  start = "2016"
+  end = "2022"
+  description = "Circular economy and open hardware — sustainability, hardware refurbishment, and ecosystem development."
+
+  [[params.experience]]
+  role = "oneAPI Innovator Program Lead / Engineering Manager"
+  org = "Intel"
+  start = "2022"
+  end = "2025"
+  description = "Led the oneAPI Innovator Program — scaled a global ambassador network from 50 to 84 innovators across 17 countries, reaching 2,800+ developers. Created and managed the UXL DevSummit conference brand. Engineering manager for 12 engineers."
+
+  [[params.experience]]
+  role = "Open Source & Community Leadership"
+  org = "Intel"
+  start = "1996"
+  end = "2016"
+  description = "20 years at the intersection of enterprise IT and open source — pioneering developer relations and community management before those roles existed in corporate contexts. GNOME contributor since 1997."
+
 [taxonomies]
   type = 'types'
   talkstatus = 'talkstatuses'

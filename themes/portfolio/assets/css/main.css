@@ -315,6 +315,55 @@ section {
   padding: var(--spacing-2xl) var(--spacing-md);
 }
 
+/* Experience Section */
+.experience-section {
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.experience-section .container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl) !important;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.experience-item {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+.experience-role h3 {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+  font-size: 1.15rem;
+}
+
+.experience-org {
+  color: var(--color-blue-light);
+  font-weight: 600;
+}
+
+.experience-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-left: var(--spacing-sm);
+}
+
+.experience-desc {
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+  font-size: 0.95rem;
+}
+
 .about-section .container {
   padding: 0 !important;
   max-width: var(--max-width);
