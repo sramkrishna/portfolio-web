@@ -4,11 +4,6 @@ description = "Community interview series hosted at Intel — conversations with
 date = 2023-01-01
 types = ["events"]
 tags = ["Community", "Meetups", "Interviews", "oneAPI", "Open Source"]
-
-[[links]]
-name = "Playlist"
-url = "https://www.youtube.com/playlist?list=PL1y7wPjc4JtEfgZg1Z4h04Vxck7c6S8tQ"
-external = true
 +++
 
 ## Overview
