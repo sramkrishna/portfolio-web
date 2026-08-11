@@ -1,9 +1,9 @@
 +++
 title = "GNOME Foundation Fundraising"
-description = "Supporting fundraising initiatives and donor relations for the GNOME Foundation"
+description = "Supporting GNOME Foundation fundraising through structural guidance and mentorship"
 date = 2025-10-17
 types = ["projects"]
-tags = ["Fundraising", "Community", "Nonprofit"]
+tags = ["Fundraising", "Community", "Non-profit"]
 
 [[links]]
 name = "Learn More"
@@ -13,14 +13,14 @@ external = true
 
 ## Project Overview
 
-Supporting the GNOME Foundation's fundraising efforts through campaign coordination, donor outreach, and community engagement.
+Supporting the GNOME Foundation's fundraising efforts through structural guidance and mentorship — helping shape how the organization approaches sustainable funding.
 
-### Responsibilities
+### My Role
 
-- Coordinating fundraising campaigns.
-- anaging donor communications and recognition.
-- Creating fundraising materials and messaging in collaboration with the design and web teams.
-- Work with the board to coordinate what areas need to be effectively fundraise.
+- **Structural guidance** — advising on fundraising structure and approach
+- **Mentorship** — mentoring those driving the fundraising work
+- **Board perspective** — helping coordinate which areas need effective fundraising, from the board's vantage point
 
-### Achievements
+### Note
 
+Current focus area alongside board service — the day-to-day campaign execution is led by others; my contribution is strategic and advisory.
