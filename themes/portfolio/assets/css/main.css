@@ -718,6 +718,15 @@ section {
   line-height: 1.4;
 }
 
+/* Clamp event card descriptions so buttons stay visible */
+.project-type-events .project-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Talk Card */
 .talk-card {
   background-color: var(--bg-tertiary);
