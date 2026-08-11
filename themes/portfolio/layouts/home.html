@@ -65,6 +65,25 @@
   {{ end }}
 {{ end }}
 
+<!-- Meetup Series Section -->
+{{ $meetups := where site.RegularPages "Section" "meetups" }}
+{{ if $meetups }}
+<section class="meetups-section">
+  <div class="container">
+    <h2 class="section-title">
+      {{ partial "icon-talks" . }}
+      Meetup Series
+    </h2>
+    <p class="section-description">The oneAPI Meetup Series — community interviews hosted at Intel with leaders across the ecosystem</p>
+    <div class="projects-grid">
+      {{ range $meetups.ByDate.Reverse }}
+        {{ partial "project-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- Talks Carousel -->
 {{ $allTalks := where site.RegularPages "Section" "talks" }}
 {{ if $allTalks }}
