@@ -1,14 +1,14 @@
 +++
-title = "Panel: Open Source & AI at DevOpsPDX"
-description = "Panel discussion on open source, AI, and the developer ecosystem at DevOpsPDX"
-event = "DevOpsPDX"
+title = "Panel: Linux & Open Source at DevOpsDays Portland"
+description = "Panel discussion on Linux, open source, and the developer ecosystem at DevOpsDays Portland 2026"
+event = "DevOpsDays Portland 2026"
 date = 2026-08-10
 location = "Portland, Oregon US"
 talkstatuses = ["upcoming"]  # Options: "upcoming", "previous"
 
 [[links]]
-name = "DevOpsPDX"
-url = "https://www.devopspdx.org/"
+name = "Panel Session"
+url = "https://devopsdays.org/events/2026-portland-or/program#session/RH99JU/"
 type = "conference"
 +++
 
