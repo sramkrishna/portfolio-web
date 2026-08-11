@@ -7,9 +7,9 @@ location = "Virtual"
 talkstatuses = ["previous"]  # Options: "upcoming", "previous"
 
 [[links]]
-name = "Event Details"
-url = "slides"
-type = "conference"  # Options: "video", "slides", "conference"
+name = "Video"
+url = "https://www.youtube.com/watch?v=X-Ae9BqwTHQ"
+type = "video"
 +++
 
 ## Talk Abstract
@@ -34,5 +34,4 @@ untapped potential in generative AI development workflows.
 
 ### Notes
 
-Unfortunately, there is no video for this talk. This was an Intel hosted conference but after the layoffs the conference has been dropped from the website. As I am the original organizer, you can find information 
-on the conference, agenda, and whatever video we did have (here)(http://portfolio.ramkrishna.me/projects/intel-ai-summit-2025/.
+Co-presented with Katherine Druckman. The Intel-hosted conference page was dropped after the Intel developer relations layoffs, but the talk video is available (see link above). Conference info is on the (Intel AI Summit 2025 project page)(http://portfolio.ramkrishna.me/projects/intel-ai-summit-2025/).
