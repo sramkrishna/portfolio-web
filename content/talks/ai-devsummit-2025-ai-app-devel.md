@@ -34,4 +34,4 @@ untapped potential in generative AI development workflows.
 
 ### Notes
 
-Co-presented with Katherine Druckman. The Intel-hosted conference page was dropped after the Intel developer relations layoffs, but the talk video is available (see link above). Conference info is on the (Intel AI Summit 2025 project page)(http://portfolio.ramkrishna.me/projects/intel-ai-summit-2025/).
+Co-presented with Katherine Druckman. The Intel-hosted conference page was dropped after the Intel developer relations layoffs, but the talk video is available (see link above). Conference info is on the [Intel AI Summit 2025 project page](https://portfolio.ramkrishna.me/projects/intel-ai-summit-2025/).
