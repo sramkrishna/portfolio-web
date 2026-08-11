@@ -117,7 +117,7 @@
         <div class="experience-role">
           <h3>{{ .role }}</h3>
           <span class="experience-org">{{ .org }}</span>
-          <span class="experience-date">{{ .start }} – {{ with .end }}{{ . }}{{ else }}Present{{ end }}</span>
+          <span class="experience-date">{{ $s := .start }}{{ if eq (len $s) 7 }}{{ $s = printf "%s-01" $s }}{{ end }}{{ dateFormat "January 2006" $s }} – {{ with .end }}{{ if eq . "Present" }}{{ . }}{{ else }}{{ $e := . }}{{ if eq (len $e) 7 }}{{ $e = printf "%s-01" $e }}{{ end }}{{ dateFormat "January 2006" $e }}{{ end }}{{ else }}Present{{ end }}</span>
         </div>
         <div class="experience-desc">{{ .description | markdownify }}</div>
       </div>

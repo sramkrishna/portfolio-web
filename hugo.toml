@@ -11,43 +11,43 @@ theme = 'portfolio'
   [[params.experience]]
   role = "President, Board of Directors"
   org = "GNOME Foundation"
-  start = "2026"
+  start = "2026-07"
   end = "Present"
   description = "Leading the GNOME Foundation Board — governance, community leadership, and strategic direction for one of the largest open source desktop communities."
 
   [[params.experience]]
   role = "Board Member"
   org = "GNOME Foundation"
-  start = "2026"
-  end = "2026"
+  start = "2026-07"
+  end = "2026-07"
   description = "Board service focused on financial oversight and sustainable fundraising for the foundation."
 
   [[params.experience]]
   role = "Founder & Consultant"
   org = "Stone & Key Consulting"
-  start = "2022"
+  start = "2022-06"
   end = "Present"
   description = "Independent consulting practice helping open-source projects, developer ecosystems, and the companies behind them build foundations that endure — open-source strategy, community growth, and developer trust."
 
   [[params.experience]]
   role = "Principal Ecosystems Engineer"
   org = "ITRenew"
-  start = "2019"
-  end = "2022"
+  start = "2019-12"
+  end = "2022-02"
   description = "Built strategic relationships with LF Networking and Open Compute Project (OCP) to advance open hardware adoption. Shepherded OCP's Mono Lake platform into open firmware acceptance — testing, building, and documenting open firmware from source (BIOS, OpenBMC, Coreboot)."
 
   [[params.experience]]
   role = "Senior oneAPI Community Manager / Innovator Program Lead / DevSummit Manager"
   org = "Intel"
-  start = "2022"
-  end = "2025"
+  start = "2022-07"
+  end = "2025-07"
   description = "Led the oneAPI Innovator Program — rebuilt and scaled a global program from 50 to 84 innovators across 17 countries, reaching 2,800+ developers through 77 activities, 23 events, and 51 AI/HPC projects. Created 'Awesome oneAPI' (148 stars). Sole architect of UXL Foundation's inaugural conference (890 registrations, 415 attendees, NPS 73%). Built community-first DevSummit events with NPS 60%+."
 
   [[params.experience]]
   role = "Engineering Manager, Build & Release, Storage Engineer"
   org = "Intel"
-  start = "1996"
-  end = "2016"
+  start = "1996-04"
+  end = "2016-04"
   description = "20 years across enterprise IT and open source: managed 12 engineers on Linux-based OS integration, led build & release for the Tizen open source phone OS (Samsung/Intel), and supported on-prem datacenter storage for 10,000+ Linux clients for 15 years — including flawless server migrations with 100% success rate."
 
 [taxonomies]
