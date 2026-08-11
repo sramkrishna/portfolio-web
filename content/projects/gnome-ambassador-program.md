@@ -3,7 +3,7 @@ title = "GNOME Ambassador Program"
 description = "Building the GNOME Ambassador Program to empower local community leaders worldwide to represent and grow the GNOME ecosystem"
 date = 2026-08-10
 types = ["projects"]
-tags = ["Community", "Outreach", "Global", "Open Source"]
+tags = ["Community", "Outreach", "Global", "Open Source", "Non-profit"]
 
 [[links]]
 name = "GNOME Engagement"

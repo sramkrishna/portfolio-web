@@ -3,7 +3,7 @@ title = "GNOME Engagement Team"
 description = "Leading community engagement initiatives for the GNOME project, coordinating outreach programs and managing contributor onboarding"
 date = 2025-10-20
 types = ["projects"]
-tags = ["Project Management", "Community", "Free Software"]
+tags = ["Project Management", "Community", "Free Software", "Non-profit"]
 
 [[links]]
 name = "GitHub Link"
