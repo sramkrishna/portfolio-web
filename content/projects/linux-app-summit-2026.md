@@ -1,7 +1,7 @@
 +++
 title = "Linux App Summit 2026"
 description = "Organizing the 10th Linux App Summit — leading outreach, fundraising, and social media strategy that doubled online viewership and hit record attendance"
-date = 2026-06-09
+date = 2026-05-16
 types = ["events"]
 tags = ["Community", "Linux", "Event Management", "Outreach", "GNOME", "KDE"]
 
