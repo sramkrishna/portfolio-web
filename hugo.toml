@@ -23,6 +23,13 @@ theme = 'portfolio'
   description = "Board service focused on financial oversight and sustainable fundraising for the foundation."
 
   [[params.experience]]
+  role = "Founder & Consultant"
+  org = "Stone & Key Consulting"
+  start = "2022"
+  end = "Present"
+  description = "Independent consulting practice helping open-source projects, developer ecosystems, and the companies behind them build foundations that endure — open-source strategy, community growth, and developer trust."
+
+  [[params.experience]]
   role = "Principal Ecosystems Engineer"
   org = "ITRenew"
   start = "2019"

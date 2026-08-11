@@ -93,27 +93,12 @@
       {{ partial "icon-talks" . }}
       Talks
     </h2>
-    <p class="section-description">Presentations and speaking engagements within the last year</p>
-    <div class="talks-carousel">
-      <button class="carousel-btn carousel-prev" aria-label="Previous talk">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-        </svg>
-      </button>
-      <div class="talks-carousel-wrapper">
-        <div class="talks-carousel-track">
-          {{ range $allTalks }}
-            {{ partial "talk-card.html" . }}
-          {{ end }}
-        </div>
-      </div>
-      <button class="carousel-btn carousel-next" aria-label="Next talk">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-        </svg>
-      </button>
+    <p class="section-description">Presentations and speaking engagements</p>
+    <div class="talks-grid">
+      {{ range $allTalks.ByDate.Reverse }}
+        {{ partial "talk-card.html" . }}
+      {{ end }}
     </div>
-    <div class="carousel-indicators"></div>
   </div>
 </section>
 {{ end }}

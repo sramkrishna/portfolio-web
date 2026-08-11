@@ -644,11 +644,20 @@ section {
   transition: transform 0.3s ease;
 }
 
-.talks-carousel-track .talk-card {
-  min-width: 100%;
+/* Talks Grid (replaces carousel) */
+.talks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.talks-grid .talk-card {
+  min-width: 0;
   width: 100%;
-  flex-shrink: 0;
-  margin-right: 0;
+  height: 100%;
 }
 
 .carousel-indicators {
