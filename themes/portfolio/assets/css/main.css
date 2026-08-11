@@ -707,8 +707,8 @@ section {
 
 /* Fixed height for event cards to ensure consistent sizing */
 .project-type-events .projects-carousel-track .project-card {
-  height: 380px;
-  min-height: 380px;
+  height: 440px;
+  min-height: 440px;
 }
 
 /* Fixed title height for event cards - 2 lines max to align descriptions */
