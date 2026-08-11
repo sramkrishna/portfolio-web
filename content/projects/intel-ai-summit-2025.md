@@ -14,6 +14,11 @@ external = true
 name = "Video"
 url = "https://www.youtube.com/watch?v=ck3LisAYSkI"
 external = true
+
+[[links]]
+name = "Conference Playlist"
+url = "https://www.youtube.com/watch?v=UwPeKLo8n9E&list=PLg-UKERBljNw9wx4vRw-lEq-nItqTcogl"
+external = true
 +++
 
 ## Conference Overview
@@ -41,9 +46,7 @@ the published agenda. However, video recordings are available.
 
 ## Video replay
 
-Click on the video replay button and then on the right sidebar click on
-"From the series" and you should be able to get msot of content from
-this conference.
+The full conference is available in the [Intel AI DevSummit 2025 playlist](https://www.youtube.com/watch?v=UwPeKLo8n9E&list=PLg-UKERBljNw9wx4vRw-lEq-nItqTcogl) on Intel's channel — covering most of the conference content.
 
 ## Event Schedule
 
