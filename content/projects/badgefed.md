@@ -1,7 +1,7 @@
 +++
 title = "BadgeFed — Federated Badging"
 description = "Building BadgeFed, a federated open source badging system using ActivityPub to recognize and verify community contributions"
-date = 2026-08-10
+date = 2026-08-03
 types = ["tech"]
 tags = ["ActivityPub", "Federation", "Badging", "Community Recognition", "Open Source"]
 
