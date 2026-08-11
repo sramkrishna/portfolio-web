@@ -34,3 +34,7 @@ A Matrix bot that boosts Mastodon posts based on the Mastodon credentials it's g
 ### Tech
 
 Matrix bot joining the homeserver (gnome.org), no exposed ports — purely room-based interaction. Designed to run on GNOME infrastructure.
+
+### Impact
+
+**In daily use by the GNOME Engagement Team — multiple boosts per day.** The bot is a working part of how the GNOME community amplifies its members' posts across the fediverse.
