@@ -1,7 +1,8 @@
 +++
 title = "GNOME Foundation Board President"
 description = "President of the GNOME Foundation Board — governance, community leadership, and strategic direction for the GNOME project"
-date = 2026-08-10
+date = 2026-07-08
+date_end = 2028-07-08
 types = ["projects"]
 tags = ["Community Leadership", "Governance", "Nonprofit", "Open Source", "Board President"]
 

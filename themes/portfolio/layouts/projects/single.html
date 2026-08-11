@@ -18,7 +18,7 @@
 
       {{ with .Date }}
       <div class="project-date">
-        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2006" }}</time>
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2006" }}{{ with $.Params.date_end }} – {{ dateFormat "January 2006" . }}{{ end }}</time>
       </div>
       {{ end }}
     </div>
