@@ -17,7 +17,7 @@
   {{ $projects := where (where site.RegularPages "Section" "projects") ".Params.types" "intersect" (slice $currentType) }}
   {{ $projects = $projects.ByDate.Reverse }}
   {{ if $projects }}
-  <section class="project-type-section project-type-{{ $currentType }}" data-type="{{ $currentType }}">
+  <section class="project-type-section project-type-{{ $currentType }}" data-type="{{ $currentType }}" id="section-{{ $currentType }}">
     <div class="container">
       <h2 class="section-title">
         {{ if eq $currentType "projects" }}
@@ -68,7 +68,7 @@
 <!-- Meetup Series Section -->
 {{ $meetups := where site.RegularPages "Section" "meetups" }}
 {{ if $meetups }}
-<section class="meetups-section">
+<section class="meetups-section" id="section-meetups">
   <div class="container">
     <h2 class="section-title">
       {{ partial "icon-talks" . }}
@@ -87,7 +87,7 @@
 <!-- Talks Carousel -->
 {{ $allTalks := where site.RegularPages "Section" "talks" }}
 {{ if $allTalks }}
-<section class="talks-section">
+<section class="talks-section" id="section-talks">
   <div class="container">
     <h2 class="section-title">
       {{ partial "icon-talks" . }}
@@ -119,7 +119,7 @@
 {{ end }}
 
 <!-- Experience Section -->
-<section class="experience-section">
+<section class="experience-section" id="section-experience">
   <div class="container">
     <h2 class="section-title">
       {{ partial "icon-gnome" . }}
